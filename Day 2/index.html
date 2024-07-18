@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(8, 36, 196);
+            color: yellow;
+            height: 30px;
+            padding-top: 5px;
+        }
+        .container1{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 30vh;
+        }
+        .item1{
+            background-color: rgb(8, 4, 4);
+            border: 10px solid white;
+        }
+        .item2{
+            background-color: blue;
+            border: 10px solid white;
+            
+        }
+        .container2{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 30vh;
+        }
+        .container3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 30vh;
+        }
+        .container2 >div{
+            border: 10px white solid;
+        }
+        .container3 > div{
+            border: 10px white solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Home</div>
+        <div>Career</div>
+        <div>Growth</div>
+        <div>Courses</div>
+        <div>About Us</div>
+    </div>
+    <hr/>
+    <div class="container1">
+        <div class="item1"></div>
+        <div class="item2"></div>
+    </div>
+    <hr/>
+    <div class="container2">
+        <div class="item1" style="background-color: green;"></div>
+        <div class="item2" style="background-color: orange;"></div>
+        <div class="item3" style="background-color: grey;"></div>
+    </div>
+    <hr/>
+    <div class="container3">
+        <div class="item1" style="background-color: orange;"></div>
+        <div class="item2" style="background-color: red;"></div>
+        <div class="item3" style="background-color: skyblue;"></div>
+        <div class="tem4" style="background-color: yellow;"></div>
+    </div>
+    <hr/>
+    <p style="text-align: center;">&copy BY ZAHEER</p>
+</body>
+</html>
