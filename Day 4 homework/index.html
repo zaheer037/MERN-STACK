@@ -451,6 +451,95 @@
     </section><!-- /Contact Section -->
 
   </main>
+  <hr>
+  <!--container div-->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>Prime number</h3>
+        <script>
+          function isPrime() {
+              var num=document.getElementById('inputNum').value;
+              if(num<=1){
+                  document.getElementById('result1').innerHTML="Not Prime";
+              }
+              else{
+              let i, flag = true;
+              
+              for (i = 2; i <= num - 1; i++) {
+                  if (num % i == 0) {
+                      flag = false;
+                      break;
+                  }
+              }
+              if (flag == true)
+                  document.getElementById('result1').innerHTML=num+" is a prime number";
+              else
+                  document.getElementById('result1').innerHTML=num+" is not a prime number";
+              }
+          }  
+        </script>
+        <div style="margin-bottom: 20px;"><input id="inputNum" type="number" value=""><br></div>
+        <div><button onclick="isPrime()">Submit</button></div>
+        <p id="result1"></p>
+      </div>
+      <div class="col">
+        <script>
+          function leapYear(){
+            var year=document.getElementById('inputNum2').value;
+            if(year%4==0){
+              if(year%100==0){
+                if(year%400==0){
+                  document.getElementById('result').innerHTML="The year is a Leap year";
+                }
+                else{
+                  document.getElementById('result').innerHTML="The year is not a Leap year";
+                }
+              }
+              else{
+                document.getElementById('result').innerHTML="This is a Leap year!";
+              }
+            }
+            else{
+              document.getElementById('result').innerHTML="This is not a Leap year!";
+            }
+          }
+        </script>
+        <h3>Leap Year</h3>
+        <div style="margin-bottom: 20px;"><input id="inputNum2" type="number" value=""><br></div>
+        <div><button onclick="leapYear()">Submit</button></div>
+        <p id="result"></p>
+      </div>
+      <div class="col">
+        <script>
+          function isPalindrome() {
+            var n=document.getElementById('inputNum3').value;
+            var temp=n;
+            var rev=0;
+            while(n>0){
+              var rem=n%10;
+              rev=rev*10+rem;
+              n=n/10;
+            }
+            if(temp==rev){
+              document.getElementById('result3').innerHTML="The number is a palindrome";
+              }
+            else{
+              document.getElementById('result3').innerHTML="The number is not a palindrome";
+            }
+                
+          }
+        </script>
+        <h3>Palindrome</h3>
+        <div style="margin-bottom: 20px;"><input id="inputNum3" type="number" value=""><br></div>
+        <div><button onclick="isPalindrome()">Submit</button></div>
+        <p id="result3"></p>
+      </div>
+    </div>
+
+  </div>
+  <hr>
+  <!--container div closes-->
   <!--Footer Section-->
   <div class="container">
     <footer class="py-5">
