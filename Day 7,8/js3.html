@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="fnum" value="">
+    <button onclick="defRandom()">Check my jodi</button>
+</body>
+<script>
+    function defRandom(){
+        var a=document.getElementById('fnum').value;
+        a=Number(a);
+        var b=Math.floor(Math.random() *(67-1)+1);
+        if(a==b){
+            alert("am lucky");
+        }
+        else{
+            alert(b+", am not lucky");
+        }
+    }
+</script>
+</html>

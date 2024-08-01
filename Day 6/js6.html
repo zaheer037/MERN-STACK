@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits=[1,2,3,44,5,6,7,77,78,66];
+        let size=fruits.length;//returns no of elements in array
+        document.write(size);
+        document.write("<br>");
+        const fruits1=["mango","apple","banana","watermelon"];
+        document.write(fruits1.toString());//converts array elements to string separated by comma
+        document.write("<br>");//converts array elements to string separated by comma
+        document.write(fruits1.at(0));//returns elements in array based on index
+        document.write("<br>");
+        document.write(fruits1.join("*"));//similar to toString(),but in adddition we can specify the operator
+        document.write("<br>");
+        fruits1.pop();//removes the last recent element from array
+        document.write(fruits1);
+        document.write("<br>");
+        fruits1.push("watermelon");//adds the element to array, at the last index
+        document.write(fruits1);
+        document.write("<br>");
+        fruits1.shift();//removes the first element from the array, and returns the remaining elements.
+        document.write(fruits1);
+        document.write("<br>");
+        fruits1.unshift("Lemon");//adds element to the array(at the beggining)
+        document.write(fruits1);
+        document.write("<br>");
+        fruits1[0]="Kiwi"; //changes the value of array element at the particular index
+        document.write(fruits1);
+        document.write("<br>");
+        delete fruits1[0]; //deletes the element at the particular index, not recommende
+        document.write(fruits1);
+        document.write("<br>");
+        document.write(fruits.concat(fruits1));//concats two arrays together as a single array
+        
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        
+    </script>
+</body>
+</html>

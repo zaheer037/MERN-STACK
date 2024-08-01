@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation Example</title>
+<style>
+  .error {
+    color: red;
+  }
+</style>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Form Validation Example</h2>
+  <form id="myForm" onsubmit="return validateForm()">
+    <label for="username">Username (8-10 characters):</label><br>
+    <input type="text" id="username" name="username"><br>
+    <span id="usernameError" class="error"></span><br>
+
+    <label for="age">Age (greater than 10):</label><br>
+    <input type="number" id="age" name="age"><br>
+    <span id="ageError" class="error"></span><br>
+
+    <label for="pincode">Pincode (6 digits):</label><br>
+    <input type="text" id="pincode" name="pincode"><br>
+    <span id="pincodeError" class="error"></span><br>
+
+    <label for="pan">PAN Number (10 characters, alphanumeric):</label><br>
+    <input type="text" id="pan" name="pan"><br>
+    <span id="panError" class="error"></span><br>
+
+    <label for="password">Password (10 characters, 1 uppercase, 1 special character, 1 digit):</label><br>
+    <input type="password" id="password" name="password"><br>
+    <span id="passwordError" class="error"></span><br>
+
+    <label for="phone">Phone Number (starting with 8):</label><br>
+    <input type="text" id="phone" name="phone"><br>
+    <span id="phoneError" class="error"></span><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

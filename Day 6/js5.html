@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="lemons" value=""><br/>
+    <button onclick="zaheer()">test me</button>
+    <p id="result"></p>
+    <script>
+        function zaheer(){
+            var noLemons=document.getElementById('lemons').value;
+            noLemons=Number(noLemons);
+            if(noLemons<0){
+                document.getElementById('result').innerHTML="Please enter positive data";
+            }
+            else if(!Number.isInteger(noLemons)){
+                document.getElementById('result').innerHTML="Please enter a valid number";
+            }
+            else if(Number.isInteger(noLemons) && noLemons<21){
+                document.getElementById('result').innerHTML=(21-noLemons)+" no of lemons required";
+            }
+            else if(Number.isInteger(noLemons) && noLemons>21){
+                document.getElementById('result').innerHTML=(noLemons-21)+" you have extra";
+            }
+            
+            
+            else{
+                document.getElementById('result').innerHTML="You have sufficient no of lemons";
+            }
+            //var result=;
+           // document.getElementById("result").innerHTML = Number.isInteger(5.9);
+        }
+    </script>
+</body>
+</html>

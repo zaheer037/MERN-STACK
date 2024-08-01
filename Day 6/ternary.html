@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Operators</h1>
+<h2>The ? : Operator</h2>
+
+<p>Input your age and click the button:</p>
+
+<input type="number" id="age" value="">
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var noLemons = document.getElementById("age").value;
+  var noLemons=Number(noLemons);
+  let text = (noLemons<0) ? "Please enter positive data":(Number.isInteger(noLemons) && (noLemons<21))?(21-noLemons):"test";
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let len = text.length;
+        let char1=text.charAt(0);
+        let sliceText=text.slice(-26,-21);
+        let subString1=text.substring(26,-1);
+        let substr1=text.substr(0,10);
+        let text1="Hello";
+        let text2="World";
+        let text3 = "     Hello World!     ";
+        let text4 = text3.trim();
+        let text5 = text3.trimStart();
+        let text6 = "4";
+        text6 = text6.padStart(4,"0");
+        let repeat1=text.repeat(2);
+        let text7 = "Please visit Microsoft and Microsoft!";
+        let newText = text7.replace("Microsoft", "W3Schools");
+
+        document.write(char1);
+        document.write(len);
+        document.write(sliceText);
+        document.write("<br>");
+        document.write(subString1);
+        document.write("<br>");
+        document.write(substr1);
+        document.write("<br>");
+        document.write(text1.concat(" ",text2));
+        document.write("<br>");
+        document.write(text4);
+        document.write("<br>");
+        document.write(text5);
+        document.write("<br>");
+        document.write(text6);
+        document.write("<br>");
+        document.write(repeat1);
+        document.write(newText);
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
